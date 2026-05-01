@@ -1,19 +1,28 @@
 const navListing = document.querySelector('.nav__listing')
+import accounts from './assets/disabled/accounts.svg'
+import creditcards from './assets/disabled/credit-cards.svg'
+import dashboard from './assets/disabled/dashboard.svg'
+import investments from './assets/disabled/investments.svg'
+import loan from './assets/disabled/loan.svg'
+import privileges from './assets/disabled/privileges.svg'
+import services from './assets/disabled/service.svg'
+import transactions from './assets/disabled/transactions.svg'
+import settings from './assets/disabled/settings.svg'
 
 const user = {
   name: "Misha",
 };
 
 const routes = [
-  { id: "dashboard", label: "Dashboard", path: "/dashboard", svg: "src/assets/icons/disabled/dashboard.svg" },
-  { id: "transactions", label: "Transactions", path: "/transactions", svg: "src/assets/icons/disabled/transactions.svg" },
-  { id: "account", label: "Account", path: "/account", svg: "src/assets/icons/disabled/accounts.svg"},
-  { id: "investments", label: "Investments", path: "/investments", svg: "src/assets/icons/disabled/investments.svg" },
-  { id: "creditcards", label: "Credit Cards", path: "/creditcards", svg: "src/assets/icons/disabled/credit-cards.svg" },
-  { id: "loans", label: "Loans", path: "/loans", svg: "src/assets/icons/disabled/loan.svg"},
-  { id: "services", label: "Services", path: "/services", svg: "src/assets/icons/disabled/service.svg"},
-  { id: "privileges", label: "My Privileges", path: "/privileges", svg: "src/assets/icons/disabled/privileges.svg"},
-  { id: "settings", label: "Settings", path: "/settings", svg: "src/assets/icons/disabled/settings.svg"},
+  { id: "dashboard", label: "Dashboard", path: "/dashboard", svg: dashboard },
+  { id: "transactions", label: "Transactions", path: "/transactions", svg: transactions },
+  { id: "account", label: "Account", path: "/account", svg: accounts },
+  { id: "investments", label: "Investments", path: "/investments", svg: investments },
+  { id: "creditcards", label: "Credit Cards", path: "/creditcards", svg: creditcards },
+  { id: "loans", label: "Loans", path: "/loans", svg: loan },
+  { id: "services", label: "Services", path: "/services", svg: services },
+  { id: "privileges", label: "My Privileges", path: "/privileges", svg: privileges },
+  { id: "settings", label: "Settings", path: "/settings", svg: settings },
 ];
 
 const appState = {
