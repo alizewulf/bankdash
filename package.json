@@ -6,11 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+=======
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+>>>>>>> da1630fb80c14170729c0363ac9ca94dd1124750
     "sass": "^1.99.0",
     "vite": "^8.0.10"
   }
