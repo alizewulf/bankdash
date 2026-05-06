@@ -1,0 +1,62 @@
+@use 'variables.scss' as *;
+@use 'typography.scss' as *;
+@use 'resets.scss' as *;
+@use 'mixins.scss' as *;
+@use 'layout.scss' as *;
+@use 'components.scss' as *;
+@use 'nav.scss' as *;
+@use 'responsive.scss' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    flex: 1;
+    height: 85px;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.current-page{
+    color: $primary-2;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.header__leftside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 12px;
+    height: 40px;
+}
+
+.leftside__input {
+    padding: 12px 20px;
+    background-color: #F5F7FA;
+    border: none;
+    border-radius: 40px;
+    &::placeholder {
+        text-align: center;
+    }
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 11px;
+    background-color: #F5F7FA;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
