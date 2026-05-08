@@ -1,0 +1,25 @@
+.main {
+    padding: 24px 40px;
+}
+
+.cards-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.cards__text,.cards__button {
+    color: #343C6A;
+    
+}
+
+.cards__text {
+    font-size: 22px;
+}
+
+.cards__button {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}

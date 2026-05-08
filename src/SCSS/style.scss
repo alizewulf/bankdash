@@ -1,11 +1,9 @@
 @use 'variables.scss' as *;
-@use 'typography.scss' as *;
 @use 'resets.scss' as *;
-@use 'mixins.scss' as *;
 @use 'layout.scss' as *;
-@use 'components.scss' as *;
 @use 'nav.scss' as *;
 @use 'responsive.scss' as *;
+@use 'main.scss' as *;
 
 .header {
     display: flex;
