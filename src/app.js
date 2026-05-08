@@ -17,7 +17,7 @@ function renderSidebar() {
   routes.forEach((route) => {
     const li = document.createElement("li");
     const img = document.createElement("img");
-    img.src = route.svg;
+    img.src = route.disabledIcon;
     img.alt = route.label;
     const span = document.createElement("span");
     span.textContent = route.label;
@@ -26,6 +26,7 @@ function renderSidebar() {
     navListing.appendChild(li);
     if (route.id === appState.currentRoute) {
       li.classList.add("nav__item--active");
+      img.src = route.activeIcon
     } else {
       li.classList.add("nav__item");
     }
