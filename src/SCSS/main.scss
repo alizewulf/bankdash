@@ -1,14 +1,31 @@
 .main {
     padding: 24px 40px;
+    background: #e9ebec;
 }
 
-.cards-content {
+.cards-wrapper {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.cards-content-header {
     display: flex;
     flex: 1;
     justify-content: space-between;
 }
 
-.cards__text,.cards__button {
+.cards__text,
+.cards__button {
     color: #343C6A;
     font-weight: 600;
 }
@@ -22,4 +39,82 @@
     border: none;
     font-size: 17px;
     font-weight: 600;
+}
+
+.card__content {
+    background: linear-gradient(#4C49ED 0%, #0A06F4 100%);
+    padding: 24px 26px;
+    border-radius: 25px;
+    color: white;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__balance-content {
+    display: flex;
+    justify-content: space-between
+}
+
+.card__balance {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance__amount {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__holder-content,
+.card-valid {
+    display: flex;
+    flex-direction: column;
+}
+
+.holder__title,
+.balance__title {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.holder__content {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-card__number {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user-card__holder {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card:nth-child(2) .card__content {
+    background: white;
+    color: #343C6A;
+}
+
+.card:nth-child(2) .balance__title,
+.card:nth-child(2) .holder__title {
+    color: #343C6A;
 }
